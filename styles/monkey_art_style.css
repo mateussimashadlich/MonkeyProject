@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+figure{
+  margin: 0;
+}
+header{
+  background-color: black;
+  height: 10vh;
+}
+#monkey-logo{
+  display: block;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: 2.5vw;
+  height: 8vh;
+}
+main{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 24px; 
+  margin-top: 15vh;
+}
+
+main aside{
+  width: 20vw;
+  justify-self: center;
+  align-self: center;
+}
+
+main aside img{
+  width: 100%;
+}
+
+main article{
+  max-width: 800px;
+  margin-right: 10vh;
+  padding-left: 10vh;
+  border-left-style: solid;
+  border-left-color: rgb(179, 179, 179);
+  border-left-width: 0.5px;
+}
+#drawings{
+  margin-top: 15vh;
+  text-align: center;
+}
+#drawings-section{
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 72px;
+  display: grid;
+  grid-column-gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 48px;
+  justify-items: center;
+}
+
+#drawings-section a figure img{
+  width: 100%;
+  transition: all 1s;
+}
+
+#drawings-section a figure img:hover{
+  width: 110%;
+  
+}
+
+@media only screen and (max-width: 1260px){
+  main {
+    grid-auto-flow: row;
+    grid-row-gap: 48px;
+  }
+
+  main aside{
+    width: 70vw;
+  }
+
+  main article{
+    justify-self: center;
+    margin-right: 5vh;
+    padding-left: 5vh;
+  }
+
+  #drawings-section{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#page-footer{ 
+  margin-top: 10vh;
+  height: 20vh;
+}
+
+#monkey-logo-footer{
+  display: block;
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8vh;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Monkey Project</title>
+	<link rel="icon" type="image/png" href="static/image.png" />
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link rel="preload" as="image" href="static/monkey_gif.gif">
+	<link rel="preload" as="image" href="static/staring_monkey.jpg">
+  <link rel="preload" as="image" href="static/staring_monkey2.jpg">
+	<link rel="preload" as="image" href="static/man_and_monkey.jpg">
+
+</head>
+
+<body>
+	<header>
+		<figure>
+			<img id="monkey-logo" src='static/image.png' alt='A monkey in black and white representing the logo'>
+      </figure>
+    </header>
+    <section id="presentation">
+      <div class="dark-layer"></div>
+      <figure>
+          <article>
+            <h1>Welcome to the Monkey Project!</h1>
+            <h2>Be part of this awesome project, which is bringing a new sight about our monkey fellows!</h2>
+          </article>      
+          <img id='monkey_gif' src='static/monkey_gif.gif' alt="A gif of a monkey playing around">
+      </figure>
+    </section>
+    <div id="slide-show"></div>
+    <section id="be-part">
+      <a href="contribute.html">
+        <div id="box">
+          <h1>Submit your work and contribute to the project!</h1>
+          <figure>
+            <img src="static/staring_monkey2.jpg" alt='A monkey staring'>
+          </figure>
+        </div>
+      </a>
+    </section>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="slideshow.js" type="text/babel"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+figure{
+  margin: 0;
+}
+header{
+  background-color: black;
+  height: 10vh;
+}
+#monkey-logo{
+  display: block;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: 2.5vw;
+  height: 8vh;
+}
+
+#monkey-logo-footer{
+  display: block;
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8vh;
+}
+#contribute_figure{
+  height: 30vh;
+  overflow: hidden;
+}
+
+#contribute_figure img{
+  width: 100%;
+}
+
+#submission{
+  display: grid;
+  max-width: 600px;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  justify-self: center;
+  font-family: 'Merriweather', 'serif';
+  animation-name: desofuscamento;
+  animation-duration: 3s;
+}
+
+@keyframes desofuscamento{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+#submission-form{
+  display:grid;
+  margin-top: 48px;
+  grid-row-gap: 24px;
+}
+#page-footer{ 
+  margin-top: 10vh;
+  height: 20vh;
+}
+
+#submit-button{
+  all: unset;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 72px;
+  height: 48px;
+  text-align: center;
+  color: white;
+  font-family: 'Merriweather', 'serif';
+  background-color: rgb(26, 26, 26);
+  text-decoration: none;
+}
+@media only screen and (max-width: 620px){
+  #submission{
+    max-width: 300px;
+  }
+}
